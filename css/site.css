@@ -1,0 +1,298 @@
+/* The sidenav */
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-1: #ff5d02;
+  --primary-light: #ffa11d;
+  --primary-dark: #ad460d;
+  --primary-dark-200: #43240B;
+  --white: #fff;
+  --grey-100: #f9f9f9;
+  --grey-200: #f4f4fb;
+  --grey-300: #d9d9d9;
+  --grey-500: #979797;
+  --grey-700: #6a6969;
+  --grey-900: #545151;
+}
+
+.sidenav {
+    height: 100%;
+    width: fit-content;
+    /* display: inline-block; */
+    /* position: fixed; */
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-right:5px;
+    box-sizing: border-box;
+    vertical-align: top;
+    float: left;
+  }
+
+  /* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    border: grey 1px solid;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  #container {
+    height:1330px;
+  }
+  /* Page content */
+#main{
+    /* display: inline-block; */
+    vertical-align: top;
+    /* background-color: #D9D9D9; */
+    height: 100%;
+    /* width: 100%; */
+    overflow-y:auto;
+    margin-top:10px;
+    /* float:right; */
+    /* z-index: 1; */
+}
+.nav-bar{
+  box-shadow: 1px 1px 10px black;
+}
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    margin: auto;
+    width: fit-content;
+    
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.side-container {
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 10px 10px 50px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: auto;
+  border-top: 1px solid #ddd;
+  /* text-align: center; */
+  /* vertical-align:middle; */
+  font-size: 14px !important;
+  text-decoration: none;
+  color: #333;
+  height: 50px;
+  line-height: 50px;
+}
+
+.item:hover {
+  background-color: #f9f9f9;
+}
+
+.main {
+  /* width: 800px; */
+  /* background-color: #fff; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.main-header {
+  text-align: left;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.main-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items:end;
+  height: 200px;
+  background-image: url('https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-position: center;
+  color: white;
+  padding: 40px;
+}
+
+.greeting h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.time-info h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.notice {
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.actions {
+  margin-top: 20px;
+  text-align: center;
+  background-color: white;
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.actions h2 {
+  font-size: 20px;
+}
+
+.action-items {
+  display: flex;
+  justify-content: space-around;
+  
+  margin-top: 20px;
+  padding: 55px;
+}
+
+.action-item {
+  width: 20%;
+  text-align: center;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.action-item h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-sections {
+  display: flex;
+  text-align: left;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.info-section {
+  width: 45%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  /* border-radius: 8px; */
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+  min-height: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.info-section h3 {
+  margin-top: 0;
+}
+
+.work-plan{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+p {
+  margin: 10px 0 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: #fff;
+  text-align: center;
+  z-index: 9;
+  padding: 15px;
+}
+
+.feedback-image-div {
+  border-radius: 7px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+}
