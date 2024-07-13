@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/import-workplan.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css" />
     <title>Dashboard</title>
@@ -27,7 +28,7 @@
                     Appraisee Section
                 </div>
                 <div class="content">
-                    <a href="workplan2.html" class="item">My Workplans</a>
+                    <a href="#" class="item">My Workplans</a>
                     <a href="#" class="item">My Appraisals</a>
                     <a href="#" class="item">View My PDFs</a>
                     <a href="#" class="item">Achievements</a>
@@ -80,82 +81,40 @@
             </div> -->
         </div>
         <div id="main" class="main">
-            <div class="main-header">
-                <div class="main-header-content">
-                    <div class="greeting">
-                        <h1>Good morning, Patrick</h1>
-                        <p><i class="fa-regular fa-bell"></i>   Your workplan is yet to <br/> be approved.</p>
-                    </div>
-                    <div class="time-info">
-                        <h2>11:40 AM</h2>
-                        <p>Tuesday, July 11</p>
-                    </div>
+            <div class="card">
+                <div class="record-header">
+                    <h1>Workplan Details - Import Workplan (XLS file)</h1>
+                    <p>NRS Workplan</p>
                 </div>
-                <div class="notice">
-                    Please take note: Database is refreshed every 24 hours. After updating your records in the other online systems, the changes will not immediately display in this application.
-                </div>
-            </div>
-            <div class="actions">
-                <h2>I would like to...</h2>
-                <div class="action-items">
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
-                        <h3>Upload my Workplan</h3>
-                        <p>Submit my planned tasks and objectives for the appraisal period.</p>
-                    </div>
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-file-pen"></i></div>
-                        <h3>Manage my Appraisals</h3>
-                        <p>Review and update my appraisal details and add comments.</p>
-                    </div>
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-file-pdf"></i></div>
-                        <h3>View/Download PDFs</h3>
-                        <p>Access and download PDF copies of your workplans and appraisals.</p>
-                    </div>
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-list-check"></i></div>
-                        <h3>Manage Achievements</h3>
-                        <p>Record and update your accomplishments to reflect completed workplans.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="contact">
-                <p><img src="assets/megaphone.svg" alt="" /> Please contact <a href="mailto:IITA-HR@cgiar.org">IITA-HR@cgiar.org</a> if appraiser information is missing or incorrect.</p>
-                <div class="info-sections">
-                    <div class="info-section">
-                        <h3>Your Account Info</h3>
-                        <div class="labels" style="display: inline-block;width: 50%;">
-                            <p><strong>Username:</strong></p>
-                            <p><strong>Registered e-mail address:</strong></p>
-                            <p><strong>Last name:</strong></p>
-                            <p><strong>First name:</strong></p>
-                            <p><strong>Staff ID:</strong></p>
-                          </div><div class="values" style="display: inline-block;width: 50%;">
-                            <p>ADEMOLA Patrick</p>
-                            <p>adepatrick@cgiar.org</p>
-                            <p>ADEMOLA</p>
-                            <p>Patrick</p>
-                            <p>E3ADEPAT</p>
-                          </div>
-                    </div>
-                    <div class="info-section">
-                        <h3>Supervising</h3>
-                        <p>You are viewing your own records.</p>
-                        <p><a href="#">Go to list of scientists you supervise</a></p>
-                        <p><a href="#">Go to list of irs you supervise</a></p>
-                        <p><a href="#">Go to list of p4d you supervise</a></p>
-                    </div>
-                    <div class="info-section">
-                        <h3>Your Appraiser</h3>
-                        <p>• David, Smith</p>
-                    </div>
+                <div class="record-details">
+                    <p><strong>Username:</strong> ADEMOLA Patrick</p>
+                    <label for="workplan-year"><strong>Workplan Year:</strong></label>
+                    <select id="workplan-year">
+                        <option value="2024">2024</option>
+                        <!-- Add other years as needed -->
+                    </select>
                 </div>
             </div>
             
-            <div class="work-plan">
-                <h2>NRS Workplans</h2>
-                <p>Please enter your <a href="#">Workplan</a>.</p>
+            <div class="import-section card">
+                <table style="margin: auto;font-size: 14px;">
+                    <tr style="width: 150px;">
+                        <td><strong>Preferred Format:</strong></td>
+                        <td><strong>Objective | Performance</strong></td>
+                    </tr>
+                    <tr>
+                        <td>XLS File: </td>
+                        <td><input type="file" id="file-upload" accept=".xls,.xlsx" name="file-upload"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td style="text-align: right;"><button class="upload-button">Upload</button></td>
+                    </tr>
+                </table>
+                <!-- <p><strong>Preferred Format:</strong> Objective | Performance</p>
+                <label for="file-upload"><strong>XLS File:</strong></label>
+                <input type="file" id="file-upload" name="file-upload"> -->
+                
             </div>
         </div>
     </div>

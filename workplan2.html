@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/workplan2.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css" />
     <title>Dashboard</title>
@@ -27,7 +28,7 @@
                     Appraisee Section
                 </div>
                 <div class="content">
-                    <a href="workplan2.html" class="item">My Workplans</a>
+                    <a href="#" class="item">My Workplans</a>
                     <a href="#" class="item">My Appraisals</a>
                     <a href="#" class="item">View My PDFs</a>
                     <a href="#" class="item">Achievements</a>
@@ -80,82 +81,79 @@
             </div> -->
         </div>
         <div id="main" class="main">
-            <div class="main-header">
-                <div class="main-header-content">
-                    <div class="greeting">
-                        <h1>Good morning, Patrick</h1>
-                        <p><i class="fa-regular fa-bell"></i>   Your workplan is yet to <br/> be approved.</p>
-                    </div>
-                    <div class="time-info">
-                        <h2>11:40 AM</h2>
-                        <p>Tuesday, July 11</p>
-                    </div>
-                </div>
-                <div class="notice">
-                    Please take note: Database is refreshed every 24 hours. After updating your records in the other online systems, the changes will not immediately display in this application.
-                </div>
+            <div class="header">
+                <h1>ADEMOLA Patrick's Workplan</h1>
+                <p>NRS Professional</p>
+                <br>
+                
+                <p class="contact-info">📧 Contact IITA DIMU - ITSA for help with software-technical issues with the Workplan application.</p>
             </div>
             <div class="actions">
-                <h2>I would like to...</h2>
-                <div class="action-items">
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-arrow-up-from-bracket"></i></div>
-                        <h3>Upload my Workplan</h3>
-                        <p>Submit my planned tasks and objectives for the appraisal period.</p>
+                <p>Add your workplan: </p>
+                <div class="add-workplan">
+                    <a class="button" href="add-new-record.html">Add new records to your Workplan 2025</a>
+                    <a class="button" href="import-workplan.html">Import new workplans from Excel (.xls) file</a>
+                </div>
+                
+            </div>
+            <div class="workplan-section card">
+                <div class="objectives">
+                    <h2>List of Workplan Objectives - 2024</h2>
+                    <div class="objective">
+                        <p><strong>1</strong> Contribute my quota to the achievement of the goals of my department.</p>
+                        <a class="button" href="workplan-details.html">Details</a>
                     </div>
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-file-pen"></i></div>
-                        <h3>Manage my Appraisals</h3>
-                        <p>Review and update my appraisal details and add comments.</p>
+                    <div class="objective">
+                        <p><strong>2</strong> Enhance the efficiency and effectiveness of the IT department.</p>
+                        <a class="button" href="workplan-details.html">Details</a>
                     </div>
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-file-pdf"></i></div>
-                        <h3>View/Download PDFs</h3>
-                        <p>Access and download PDF copies of your workplans and appraisals.</p>
-                    </div>
-                    <div class="action-item">
-                        <div class="icon"><i class="fa-solid fa-list-check"></i></div>
-                        <h3>Manage Achievements</h3>
-                        <p>Record and update your accomplishments to reflect completed workplans.</p>
+                    <div class="objective">
+                        <p><strong>3</strong> Enhance Employee Engagement and Satisfaction.</p>
+                        <a class="button" href="workplan-details.html">Details</a>
                     </div>
                 </div>
-            </div>
-            <div class="contact">
-                <p><img src="assets/megaphone.svg" alt="" /> Please contact <a href="mailto:IITA-HR@cgiar.org">IITA-HR@cgiar.org</a> if appraiser information is missing or incorrect.</p>
-                <div class="info-sections">
-                    <div class="info-section">
-                        <h3>Your Account Info</h3>
-                        <div class="labels" style="display: inline-block;width: 50%;">
-                            <p><strong>Username:</strong></p>
-                            <p><strong>Registered e-mail address:</strong></p>
-                            <p><strong>Last name:</strong></p>
-                            <p><strong>First name:</strong></p>
-                            <p><strong>Staff ID:</strong></p>
-                          </div><div class="values" style="display: inline-block;width: 50%;">
-                            <p>ADEMOLA Patrick</p>
-                            <p>adepatrick@cgiar.org</p>
-                            <p>ADEMOLA</p>
-                            <p>Patrick</p>
-                            <p>E3ADEPAT</p>
-                          </div>
+                <div class="approval-section">
+                    <div class="year-selector">
+                        <label for="year">Pick a year:</label>
+                        <select id="year">
+                            <option value="2024">2024</option>
+                            <!-- Add other years as needed -->
+                        </select>
                     </div>
-                    <div class="info-section">
-                        <h3>Supervising</h3>
-                        <p>You are viewing your own records.</p>
-                        <p><a href="#">Go to list of scientists you supervise</a></p>
-                        <p><a href="#">Go to list of irs you supervise</a></p>
-                        <p><a href="#">Go to list of p4d you supervise</a></p>
+                    <div class="approval-status">
+                        <p>💡 Your Workplan is yet to be submitted for approval.</p>
+                        <textarea style="width: 80%;" class="text-area" placeholder="Leave a comment:"></textarea>
+                        <br>
+                        <button class="submit-button">Submit</button>
                     </div>
-                    <div class="info-section">
-                        <h3>Your Appraiser</h3>
-                        <p>• David, Smith</p>
+                    <div class="action-logs">
+                        <h2>💡 Workplan Action Logs</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Action</th>
+                                    <th>Details</th>
+                                    <th>Comment</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>29/11/2023 11:28</td>
+                                    <td>SUBMITTED</td>
+                                    <td>Workplan Submitted by ADEMOLA Patrick</td>
+                                    <td>Initial Submission</td>
+                                </tr>
+                                <tr>
+                                    <td>18/12/2023 14:47</td>
+                                    <td>APPROVED</td>
+                                    <td>Workplan Approved by DAVID Smith</td>
+                                    <td>Final Approval</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-            </div>
-            
-            <div class="work-plan">
-                <h2>NRS Workplans</h2>
-                <p>Please enter your <a href="#">Workplan</a>.</p>
             </div>
         </div>
     </div>
