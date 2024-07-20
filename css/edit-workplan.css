@@ -1,5 +1,4 @@
-.record-header{
-    text-align: left;
+.record-header {
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
 }
@@ -24,13 +23,12 @@
     font-size: 14px;
 }
 
-.record-details label {
-    margin-right: 10px;
-    font-size: 14px;
+.year-select {
+    margin-top: 10px;
 }
 
-textarea{
-    resize: none;
+.year-select label {
+    font-size: 14px;
 }
 
 #workplan-year {
@@ -38,51 +36,50 @@ textarea{
     font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin-top: 5px;
 }
 
-.objective-section {
+.edit-workplan-form {
     margin-top: 20px;
+    margin-bottom: 50px;
 }
 
-.objective-section label {
-    display: block;
-    margin-bottom: 10px;
+.edit-workplan-form label {
     font-size: 16px;
+    display: block;
+    margin-bottom: 5px;
 }
 
 #objective {
     width: 100%;
     height: 100px;
     padding: 10px;
+    font-size: 14px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 14px;
+    margin-bottom: 20px;
 }
 
-.buttons {
-    margin-top: 20px;
+.form-actions {
     display: flex;
     justify-content: flex-end;
-  margin-bottom: 50px;
-
 }
 
-.cancel-button, .update-button {
+.form-actions button {
     padding: 10px 15px;
     font-size: 14px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .cancel-button {
-    background-color: #fff;
-    color: #d9534f;
-    border: 1px solid #d9534f;
-    margin-right: 10px;
+    background-color: #d9534f;
+    color: #fff;
 }
 
 .update-button {
-    background-color: #f0ad4e;
+    background-color: #5cb85c;
     color: #fff;
 }
