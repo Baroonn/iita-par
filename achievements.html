@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+    <link rel="stylesheet" type="text/css" href="css/achievements.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css" />
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="topnav">
+            <img src="assets/IITA-logo-1.png" alt="IITA logo" style="float: left;"/>
+            <img src="assets/PAR-logo.svg" alt="PAR Logo" class="par-logo" style="float: left; margin-right: 20px;"/>
+            <a class="active" href="dashboard.html">Dashboard</a>
+            <a href="#news">Delegate</a>
+            <a href="#contact">Bug</a>
+            <a href="#about">Help</a>
+        </div>
+    </div>
+    
+    <div id="container">
+        <div id="mySidenav" class="sidenav">
+            <div class="side-container">
+                <div class="header">
+                    Appraisee Section
+                </div>
+                <div class="content">
+                    <a href="workplan2.html" class="item">My Workplans</a>
+                    <a href="#" class="item">My Appraisals</a>
+                    <a href="#" class="item">View My PDFs</a>
+                    <a href="#" class="item">Achievements</a>
+                </div>
+            </div>
+
+            <div class="side-container">
+                <div class="header">
+                    Appraiser Section
+                </div>
+                <div class="content">
+                    <a href="#" class="item">Supervise</a>
+                    <a href="#" class="item">Manage NRS PG 1-6 Appraisal(s)</a>
+                    <a href="#" class="item">Manage NRS PG 7-15 Appraisal(s)</a>
+                    <a href="#" class="item">Manage R4D Appraisal(s)</a>
+                </div>
+            </div>
+
+            <div class="side-container">
+                <div class="header">
+                    Quick Access
+                </div>
+                <div class="content">
+                    <a href="#" class="item">My Learning</a>
+                    <a href="#" class="item">DOIs</a>
+                </div>
+            </div>
+
+            <div class="side-container" style="margin-bottom: 0px !important;">
+                <div class="header">
+                    Support
+                </div>
+                <div class="content">
+                    <a href="#" class="item"><i class="fa-sharp fa-regular fa-envelope"></i> Contact IT Support</a>
+                    <a href="#" class="item"><i class="fa-solid fa-route"></i> Take a Tour</a>
+                    <a href="#" class="item"><i class="fa-regular fa-circle-question"></i> Frequently Asked Questions</a>
+                    <a href="#" class="item"><i class="fa-regular fa-comment-dots"></i> Help us make PAR better
+                        <!-- <div class="feedback-image-div">
+                            <img src="assets/par-mockup-1.png" alt="PAR Mockup" />
+                            <p>Share your feedback</p>
+                          </div> -->
+                    </a>
+                    <a href="#" class="item"><i class="fa-solid fa-arrow-right-to-bracket"></i> Logout</a>
+                </div>
+            </div>
+
+            <!-- <div class="work-plan">
+                <h2>Ademola Patrick</h2>
+                <p>NRS Professional</p>
+            </div> -->
+        </div>
+        <div id="main" class="main">
+            <div class="achievements-header card">
+                <h1>Achievements</h1>
+                <p>NRS Workplan</p>
+                <br>
+                <p><strong>Username:</strong> ADEMOLA Patrick</p>
+            </div>
+            <div class="achievements-content card">
+                <h2>List of Workplan Objectives - 2024</h2>
+                <div class="objective">
+                    <h3>1. Contribute my quota to the achievement of the goals of my department.</h3>
+                    <button class="toggle-details">Show workplan details</button>
+                    <div class="workplan-details">
+                        <p><strong>KPI Text:</strong> Complete assigned departmental tasks and projects with a minimum accuracy rate of 90% and within the allocated deadlines.</p>
+                        <p><strong>KPI Activity:</strong> Collaborate effectively with team members on project tasks, attend all departmental meetings, provide regular progress updates, and submit all deliverables on or before the deadlines.</p>
+                        <div class="achievement-details">
+                            <p><strong>Achievement:</strong> Completed Workplan</p>
+                            <p><strong>Comment:</strong> None</p>
+                            <button class="edit-button">Edit</button>
+                            <button class="delete-button">Delete</button>
+                        </div>
+                    </div>
+                    <button class="add-achievement-button">Add achievement to "Contribute my quota to the achievement..."</button>
+                </div>
+                <div class="objective">
+                    <h3>2. Enhance the efficiency and effectiveness of the IT department</h3>
+                    <button class="toggle-details">Show workplan details</button>
+                    <button class="add-achievement-button">Add achievement to "Enhance the efficiency and effectiveness..."</button>
+                </div>
+                <div class="objective">
+                    <h3>3. Enhance Employee Engagement and Satisfaction</h3>
+                    <button class="toggle-details">Show workplan details</button>
+                    <button class="add-achievement-button">Add achievement to "Enhance Employee Engagement..."</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="margin-top:20px" class="footer" data-title="Need help with something?" data-intro="Reach out to us. We're here to assist you.">
+        <div class="flex-center footer-logos">
+          <img src="assets/IITA-logo-1.png" alt="IITA logo" />
+          <img src="assets/PAR-logo.svg" alt="PAR Logo" />
+        </div>
+        <div class="help-div">
+          <h2>Need help with something?</h2>
+          <p>
+            Check out our <strong><a href="">FAQ Page</a></strong> for answers to common questions.
+          </p>
+          <p>
+            Or contact <strong><a href="mailto:IITA-SDITSA@cgiar.org">IITA-SDITSA@cgiar.org</a></strong> for help.
+          </p>
+        </div>
+      </footer>
+
+      <!-- Use any element to open the sidenav -->
+      <!-- <span onclick="openNav()">open</span> -->
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      
+      <script src="js/site.js"></script>
+</body>
+</html>
